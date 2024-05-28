@@ -1,0 +1,58 @@
+table, td, th {
+    border: solid 2px black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    caption-side: bottom;
+}    
+
+caption{
+    color: red;
+}
+
+th {
+    height: 80px;
+    font-weight: bold;
+    vertical-align: left;
+    padding-bottom: 30px;
+    color: green;
+}
+
+td {
+    font-weight: normal;
+    text-align: center;
+    
+}
+
+th:nth-child(1){
+    width: 50%;
+    background-color: blueviolet;
+} 
+
+th:nth-child(2){
+    width: 50%;
+    background-color: rgb(226, 43, 43);
+} 
+
+th:nth-child(3){
+    width: 50%;
+    background-color: rgb(226, 43, 43);
+} 
+
+td:nth-child(1){
+    width: 50%;
+    background-color: rgb(226, 43, 43);
+} 
+
+td:nth-child(2){
+    width: 50%;
+    background-color: blueviolet;
+} 
+
+td:nth-child(3){
+    width: 50%;
+    background-color: blueviolet;
+} 
+ 

@@ -1,0 +1,30 @@
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+
+body {border: solid 0px red; height: 100%; min-height: 100vh; background-color: whitesmoke;}
+
+ul {
+    width: 100%;
+    /*max-width: 220px;*/
+    border: solid 0px red;
+    list-style: none;
+    /*list-style-position: inside;*/
+    text-align: center; 
+}
+
+li {
+    padding: 3px 0px 3px 15px;
+    border-left: solid 10px black;
+    margin-bottom: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #555;
+    display: inline;
+}
+
+li:hover {
+    border-left-color: blue;
+    background-color: blueviolet;
+    color: #fff;
+    font-style: italic;
+}
+

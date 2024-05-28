@@ -1,0 +1,11 @@
+table, td, tr, th {
+    border: solid 2px black;
+    border-style: double;
+    font-size: xx-large;
+    text-align: center;
+    background-color: yellow;
+}
+
+th.espaco {
+    background-color: white;
+}

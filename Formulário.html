@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="Formulário.css">
+    <!--Método get para dados não sensíveis, post para sensíveis.
+        Tudo que colocar em get aparece na URL.
+        Se o atributo name não estiver presente as informações não serão enviadas ao servidor
+        Camel case - nomeDoProduto tudo depois da segunda palavra tem a primeira letra maiúscula
+        Snake case - nome_do_produto
+        Valor estático == valor inicial que estava no HTML, dinâmico o definido pela tag value child do input
+        disabled para desativar elementos e não permitir modificações-->
+</head>
+<body>
+    <form action="#" method="get" enctype="multipart/form-data">
+        <label for="nome">Nome</label>  
+        <input value="Abacaxi" type="text" id="nome" name="nome" placeholder="Insira seu nome" maxlength="7">  
+        <br>
+
+        <label for="idade">Idade</label>
+        <input type="number" min="0" max="130" step="0.0001" name="idade" id="idade" placeholder="Insira sua idade">
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Insira seu email">
+        <br>
+
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" placeholder="Insira sua senha">
+        <br>
+
+        <label for="cor">Cor</label>
+        <input value="#FF0000" type="color" name="cor" id="cor">
+        <br>
+
+        <label for="data">Data</label>
+        <input type="date" name="data" id="data">
+        <br>
+
+        <label for="time">Hora</label>
+        <input type="time" name="time" id="time">
+        <br>
+
+        <label for="mês">Mês</label>
+        <input type="month" name="mês" id="mês">
+        <br>
+
+        <label for="">Range</label>
+        <input type="range" name="range" id="range">
+        <br>
+
+        <label>Esportes</label>
+        <br>
+
+        <label for="basquete">Futebol</label>
+        <input type="checkbox" name="esportes[]" value="1" id="futebol">
+        <label for="futebol">Basquete</label>
+        <input type="checkbox" checked name="esportes[]" value="2" id="basquete">
+        <br>
+
+        <label>Turno</label>
+        <br>
+        <label for="manha">Manhã</label>
+        <input type="radio" name="turno" id="manha" value="M">
+        <label for="tarde">Tarde</label>
+        <input type="radio" checked name="turno" id="tarde" value="T">
+        <label for="noite">Noite</label>
+        <input type="radio" name="turno" id="noite" value="N">
+        <br>
+
+        <label for="estado">Estado</label>
+        <select name="estado" id="estado">
+            <option value="-1">Selecione o seu estado</option>
+            <option selected value="RS">Rio Grande do Sul</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+        </select>
+        <br>
+
+        <label for="descricao">Descrição do produto</label>
+        <br>
+        <textarea name="descricao" id="descricao" cols="30" rows="7"></textarea>
+        <br>
+
+        <label for="arquivo">Inserir arquivo</label>
+        <input type="file" accept=".html, .css, .js, .java" name="arquivo" id="arquivo">
+        <br>
+
+        <button type="button" onclick="alert ('oi')">Salvar</button>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+        <br> 
+ 
+        <label for="hidden"></label>
+        <input type="hidden" name="hidden" id="hidden" value="5">
+
+    </form>
+</body>
+</html>
